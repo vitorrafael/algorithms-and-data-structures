@@ -1,0 +1,14 @@
+1.) LOW LEVEL MEMORY MANAGEMENT
+    Linked lists are very important, e.g. when dealing with C programming malloc() and free() functions which manipulate the heap memory. The blocks within the heap are connected through doubly linked lists.
+    
+2.) ACTIVE TABS IN YOUR MACHINE
+    The tabs are connected as linked lists
+    
+3. ) PHOTO VIEWERS
+    The next photo and previous photo are linked together with the help of Linked Lists
+    
+4. ) BLOCKCHAINS
+    - Most import
+    - The blockchain is basically a simple linked list where block are cryptographically linked togeter.
+    - The blockchain itself is a linked list with hash-pointers.
+    - Every block has 2 hash values: its own hash and the hash value of the previous block

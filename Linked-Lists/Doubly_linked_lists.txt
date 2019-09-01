@@ -1,6 +1,28 @@
 PROBLEMS:
     - You can go to the next node but can't return to the previous one.
+    
     Solution:
         Doubly Linked List: The node class has two references, one pointing to the next node and another to the previous node.
         So you can get from everywhere to everywhere, which is not so memory friendly because there are many lots of eferences.
-        There is no need to track the previous node during the iterations
+        There is no need to track the previous node during the iterations.
+        You can access the head and the tail.
+        
+        A Single Node:
+            - Contais data;
+            - Pointer to the next node;
+            - Pointer to the previous node;
+            
+        class Node {
+        
+            data;
+            Node next_node;
+            Node previous_node;
+        }
+        
+        If we want to get rid of a item there is no need to keep the previous node.
+        
+        - Remove operation: O(1) Time Complexity
+        
+        ADVANTAGES:
+            - Traverse forward and backward.
+            - Remove operation is more efficient if the node is given, because we don't need its predecessor
