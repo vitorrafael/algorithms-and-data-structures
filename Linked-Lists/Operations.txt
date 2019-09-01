@@ -1,0 +1,19 @@
++ Insertion: Insert items at the beginning of the linked list:
+    - Just update the references;
+    - Time Complexity: O(1).
+    
++  Insertion: Insert items at the end of the linked lists:
+    - Traverse the whole linked list to find the last node: O(N);
+    - Last Node: Points to NULL;
+    - Update the reference of the last node: O(1);
+    - Time Complexity: O(1) + O(N) = O(N).
+    
++ Remove: Remove item at the beginning:
+    - There is no need to search the item;
+    - Just update the references accordingly;
+    - Time Complexity: O(1).
+    
++ Remove: Remove item at a given point:
+    - Search for the given item: O(N);
+    - The previous node should point to the next node;
+    - Time Complexity: O(N).

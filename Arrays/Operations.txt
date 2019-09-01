@@ -1,0 +1,14 @@
+Arrays Operation:
+    - add: We can keep adding values to the array as far as it is not full. Insert in the next item possible -> O(1)
+    - Insert item: Insert a given value with a given index Shifts the other values forward to release the space -> O(N) Linear time complexity
+    - Remove: Remove the last item -< O(1)
+    - Remove item with given index: Remove and shift the other values to rearrange the array -> O(N)
+        
+        
+        
+        
+Time Complexities:        
+    - Add new item: O(1)
+    - Insert item to a given index: O(N)
+    - Removing last item: O(1)
+    - Removing item with a given index: O(N)

@@ -1,0 +1,30 @@
+    Linked lists are composed of nodes and references/pointers pointing
+from one node to other. The last reference is pointing to a NULL (NONE).
+
+A Single Node:
+    - Contains data -> integer, double, custom object
+    - Contains a reference pointing to the next node in the linked list; if it is the last node, points to NULL
+    
+    class Node {
+    
+        data
+        Node nextNode
+    }
+    
+Simple and common data structure.
+Can be used to implement several other common data types: stacks, queues.
+Do not allow random acess to the data.
+Many basic operations require sequential scanning of most or all the list elements.
+
+ADVANTAGES:
+    - Dynamic data structures.
+    - It can allocate the needed memory in run-time.
+    - Very efficient on manipulating the first elements.
+    - Easily implemented.
+    - Can store items with different sizes.
+    - It's easier to grow organically, just updating the references, whilst arrays needed to be know ahead of time or re-created.
+    
+DISADVANTAGES:
+    - Waste memory due to the references.
+    - Nodes must be read in order from the beggining to the end.
+    - Difficulties arise when it comes to reverse traversing. Singly linked lists are extremely difficult to navigate backwards, doubly linked lists are easier to read, but memory is wasted in allocating space for a back pointer.

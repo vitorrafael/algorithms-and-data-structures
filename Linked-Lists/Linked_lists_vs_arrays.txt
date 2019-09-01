@@ -1,0 +1,28 @@
+SEARCH:
+    - The search operations yields the same results for both;
+    - ArrayList search operation speed > LinkedList search operation;
+    - Arrays can use random access: O(1)
+    - Linked list: O(N)
+    
+    ArrayList is better for this operations because it has a index based system for its elements. On the other hand LinkedList requires iterating.
+    
+DELETION:
+    - LinkedLists remove operation from the beginning takes O(1)
+    - ArrayList remove operation in the beginning takes O(N), removing the last item takes O(1)
+    - On average there is the need to reconstruct the array when removing.
+    
+    LinkedList is better for this operation because it operates with pointers.
+    
+MEMORY MANAGEMENT:
+    - Arrays do not need any extra memory;
+    - LinkedLists requires extra memory due the references/pointers;
+    
+    Arrays are better.
+    
+    
+                       LINKED LIST | ARRAYS
+Search                      O(N)   |  O(1)
+Insert at the start         O(1)   |  O(N)
+Insert at the end           O(N)   |  O(1)
+Waste Space                 O(N)   |    0
+    

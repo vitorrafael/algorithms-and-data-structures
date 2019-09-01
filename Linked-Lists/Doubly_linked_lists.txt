@@ -1,0 +1,6 @@
+PROBLEMS:
+    - You can go to the next node but can't return to the previous one.
+    Solution:
+        Doubly Linked List: The node class has two references, one pointing to the next node and another to the previous node.
+        So you can get from everywhere to everywhere, which is not so memory friendly because there are many lots of eferences.
+        There is no need to track the previous node during the iterations

@@ -1,0 +1,34 @@
+Arrays are data structures,
+a collection of elements or values each one identified by an array
+index or key
+
+    - Index starts at zero
+    - Indexes -> random access is possible
+    
+Multidimensional arrays: Very important in mathematical
+related computations (matrixes)
+    numbers[][] -> two dimensional array
+        - First parameter -> Row
+        - Second parameter -> Column
+
+Most Programming Languages arrays stores only one type
+
+They can have as many dimensions as we want;
+Dinamic array: Size changes dinamically;
+
+Applications: lookup tables / hashtables, heaps
+
+ADVANTAGES:
+    - Random Access: getitem(int index) returns the value
+    within the given key on constant time complexity: O(1)
+    - Easily implemented and used
+    - Very fast
+    - Used in applications when we want to add items over and over again
+    and we want to take items with given indexes
+
+DISADVANTAGES:
+    - We have to know the size of the array at compile-time: so it's not
+    so dynamic data structure
+    - If it is full we have to create a bigger one and copy the values
+    one by one -> reconstructing it is O(N) time complexit
+    - It's not able to store items with different types
