@@ -1,0 +1,4 @@
+STACK APPLICATION:
+    1.) Back button in web browsers;
+    2.) Undo operation in softwares;
+    3.) Stack memory for function calls and local variables;

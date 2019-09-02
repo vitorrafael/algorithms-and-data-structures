@@ -1,0 +1,26 @@
+QUEUES:
+
+    - Abstract data type;
+    - Basic Operations: enqueue(), dequeue() and peek();
+    - FIFO structure: first in first out;
+    - It can be implmented with dynamic arrays or linked lists;
+    - Important when implementing BFS algorithm for graphs;
+    
+Operations:
+    - Enqueue:
+        * Add a new item to the end of the queue;
+        * Time Complexity: O(1)
+        
+    - Dequeue:
+        * Simply remove the item start at the beginning of the queue;
+        * Time Complexity: O(1)
+        
+    - Peek:
+        * Returns the starting item value without removing it.
+        
+APPLICATIONS:
+    - Threads are stored in a queue;
+    - CPU scheduling;
+    - Asynchronous data;
+    - IO buffers;
+    - Operational research applications or stochastic models.

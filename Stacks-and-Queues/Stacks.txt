@@ -1,0 +1,62 @@
+STACKS
+    - Abstract data type
+    - Basic Operations: pop(), push() and peek()
+    - LIFO structure: last in first oout
+    - In most high-level languages, they can be easily implemented with arrays or linked lists.
+    - Many programming languages are stack-oriented - most basic operations takes arguments from the stack and places the return value on the stack.
+    
+    
+Push Operation:
+    - Put the given item to the top of the stack
+    - Time comeplexity: O(1)
+    
+Pop Operation:
+    - Take the last item inserted on the top of the stack.
+    - Time Complexity: O(1)
+    
+Peek Operation:
+    - Return the time from the top without removing it
+    - Time Complexity: O(1)
+    
+APPLICATIONS:
+    - Stack-oriented programming languages;
+    - Graph algorithms: depth-first search can be implemented with stacks or with recursion;
+    - Finding Euler-cycles in a graph;
+    - Finding strongly connected components in a graph.
+    
+MEMORY MANAGEMENT:
+    - Stack Memory: most important application of stacks;
+        * Is a special region of the memory in the RAM;
+        * A call stack is an abstract that stores info about the active subroutines/methods/functions of a computer program;
+        * Details are normally hidden and automatic in high-level programming languages;
+        * Keeps track of the point to which active subroutine should return control when its execution is finished;
+        * Stores temporary variables created by each function.
+        * Every time a function declares a new variable it is pushed onto the stack and when it exits all the variables are freed (popped out of the stack and lost forever);
+        * Local variables: they are on the stack, after function returns they are lost.
+        * Stack memory is limites.
+
+    - Heap Memory:
+        * Not managed automatically;
+        * Large region of memory/
+        * C: malloc() and calloc() functions
+        * Java: reference types and objects are on the heap;
+        * We have to deallocate these memory chunks, otherwise memory leak;
+        * Slower because of the pointers;
+        
+        
+              STACK MEMORY | HEAP MEMORY
+Size:              limited | unlimited
+Access:              fast  | slow
+stores:    local variables | objects
+Managements: Space managed | memory may be fragmented
+        efficiently by CPU |
+Resizements: Impossible    | Possible - realloc()
+
+
+STACKS AND RECURSION:
+    - Sometimes recursive methods are quite handy;
+    - DFS, traversing a binary search tree, looking for an item in a linked list;
+    - All the recursive algorithms can be transformed into a simple method with stacks;
+    - The OS will always use stacks, no matter what we do.
+    - If there are too many function calls to be pushed onto the stack, it may get full -> stack overflow;
+    - After the base case is reached, the backtrack starts to happen.
