@@ -1,0 +1,6 @@
+1.) Trees are extremely powerful in representing hierarchical data
+    - Operation Systems;
+    - Game trees;
+    - Machine Learning: Decision trees and boosting;
+    
+    

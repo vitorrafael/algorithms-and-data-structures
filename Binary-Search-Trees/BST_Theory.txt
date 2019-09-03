@@ -1,0 +1,80 @@
+BST -> Binary Search Trees
+
+   SORTED ARRAYS      |    LINKED LISTS
+----------------------|-----------------------   
+Inserting a new item  | Inserting a new item
+        O(N)          |       O(1)
+Searching with binary | Searching is sequential
+        O(logN)       |       O(N)
+Removing an item      | Removing an item
+        O(N)          |       O(1) 
+        
+        
+    Binary Search makes all operations fast with logarithmic time, doesn't matter what happens.
+    - TIME COMPLEXITY: O(N)
+    
+- Trees: There are nodes with the data and connection between the nodes.
+    * Root Node: There is a reference to him and all other nodes can be accessed by him;
+    * In a tree: There must be only a single path from the root to each node;
+    * A node directly connect to another one -> Child
+    * The opposite -> Parent node
+    * Leaf Nodes -> No children
+    
+    * Every node can have at most two children: left and right child;
+    * Left child: Smaller than the parent;
+    * Right child: Greater than the parent
+    * In every decision half of the data is removed from the search -> O(logN) Time complexity
+    
+    * Height of the tree: Number of layers it contais;
+    * If h is proportional to O(logN) -> Tree is balanced, otherwise it is unbalanced, assymetric;
+        * The length of the path from the root to the deepest node in tree: 
+            - We should keep the height of tree at a minimum which is h=log n;
+            - If the tree is unbalanced: the h=log n is no more valid and the operation's running time is no more logarithmic;
+            
+            
+- BSTs are data structures;
+- Keeps the keys in sorted order;
+- Each comparision allows the operations to ship half of the tree;
+- Much better than the linear time, but slower than hash tables;
+
+OPERATIONS:
+
+ * Insertion: We start at the root node. If the data we want to insert is greater than the root node we go to the right, if it is smaller we go to the left.
+ 
+ * Search: Start at the root node. If the data to be searched is greater than the root node go to the right, otherwise go to the left;
+     - Time Complexity: O(log N);
+     - Smallest node: Go left as deeper as possible;
+     - Greatest node: Go right as deeper as possible;
+     
+ * Delete:
+     - Soft Delete: Don't remove the node from the BST, just mark it has removed (Not so efficient);
+     - Leaf Node Removal: Just set it to null;
+         # Just search it and delete or set it to None;
+         # Time Complexity: O(log N) + O(1) = O(log N)
+     - Has single child: Update references;
+         # Search it;
+         # Make sure its parent is pointing to its grandchild;
+         # Time Complexity: O(logN) + O(1) = O(log N);
+     - Has two children:
+         # Look for the largest item (predecessor) in the left subtree or the smallest item(sucessor) in the right subtree;
+         # Swap the node to be deleted with the predecessor or sucessor;
+         # Go back to first situation or second situation;
+         # Time Complexity: O(logN);
+         
+         
+- TRAVERSAL: Sometimes it is necessary to visit every node in the tree;
+    * In-Order Traversal: We visit the left subtree + the root node + the right subtree in a recursive manner;
+        # Yields a numerical ordering or alphabetic ordering;
+    * Pre-Order Traversal: Visit the root + left subtree + the right subtree recursively;
+     * Post-Order Traversal: Visits the left subtree + right subtree + the root recursively
+     
+RUN-TIME COMPLEXITIES:
+
+            AVERAGE CASE | WORST CASE
+Space          O(n)      |  O(n)
+Insert         O(log n)  |  O(n)
+Delete         O(log n)  |  O(n)
+Search         O(log n)  |  O(n)
+
+
+    The worst case scenarios happen when the tree becomes unbalanced;
