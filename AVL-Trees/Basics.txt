@@ -1,0 +1,20 @@
+- The running time of BST operations depends on the height of it: a balaced tree gets the best performance;
+- AVL Trees:
+    * Created in 1962 by two russian computer scientist;
+    * The heights of the two child subtrees of any node differ by at most one;
+    * AVL trees are faster than red-black tree because they are more balanced;
+    * OS relies heavily on these data structures;
+    * Most operations are the same as BST;
+    * Every node can have at most 2 children like the BST;
+    * Same insertion operation but checks wheter the tree is unbalanced or not;
+    * Deletion operation is the same;
+    * Maximum/minimum finding operations are the same as well;
+    
+    - Balanced Trees
+    
+        AVERAGE CASE    |      WORST CASE
+    --------------------|---------------------
+    Space     O(N)      |       O(n)
+    Insert    O(log n)  |       O(log n)
+    Delete    O(log n)  |       O(log n)
+    Search    O(log n)  |       O(log n)

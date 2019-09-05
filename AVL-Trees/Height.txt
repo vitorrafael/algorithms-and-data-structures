@@ -1,0 +1,15 @@
+- Height of a node: length of the longest path from it to a leaf
+    * Use recursion to calculate it:
+            height = max(left_child.height(), right_child.height()) + 1
+    * For nulls we consider -1 height;
+    * We want the height as small as possible: we store it and if it gets high we fixt it;
+    * All subtrees height parameter doesn't differ more than one
+    
+- AVL Trees:
+    * They require the heights of left and right child of enery node to differ at most +1 or -1;
+    * | height(left_subtree) - height(right_subtree) | < 1;
+    * Maintains this property in O(logN);
+    * Insertion:
+        1.) A simple BST insertion;
+        2.) Fix the AVL property on each insertion from insertion upward;
+    * There may be several violations of AVL property from the inserted node up to the root, and we have to check them;

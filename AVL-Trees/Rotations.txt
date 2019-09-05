@@ -1,0 +1,30 @@
+ROTATIONS
+
+    Cases:
+        I.) Doubly-left heavy situtation:
+            - The root node has a left subtree which has a left child;
+            - Rotates to the right because the difference of height is more than one;
+            - The root node becomes the right child of the root node's original left child which now is the root node;
+            - Update the references.
+            
+        II.) Doubly-right heavy situation:
+            - The root node has a right tree which has a right child;
+            - Rotates to the left because the difference of height is more than one;
+            - The root node becomes the left child of the root node's original right child which now it the root node;
+            - Update the references.
+            
+        III.) Left-Right Situtation:
+            - D -> B -> C;
+            - The root node has a left child that has a right child;
+            - Checks if the AVL properties are violated or not;
+            - Make a left rotation on the second node: The Node B becomes the left child of the node C which becomes the left child of D;
+            - Makes a right rotation on the root  node D.
+            - B <- C -> D
+            
+        IV.) Right-Left Situation:
+            - D -> F -> E;
+            - The root node has a right child that has a left child;
+            - Checks if the AVL properties are violated or not;
+            - Make a right rotation on the F node;
+            - Rotates the node D to the left;
+            - D <- E -> F

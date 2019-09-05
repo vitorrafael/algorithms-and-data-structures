@@ -1,0 +1,12 @@
+What is the motivation behind balance binary trees?
+
+    - Linked lists: Quite easy to implement
+        * Stores lots of pointers;
+        * O(N) search operation time complexity;
+        
+    - Binary Search Trees: O(N) cam be reduced to O(logN) time complexity
+        * If the tree is unbalanced: the operations become slowers;
+       
+    - Balanced Binary Trees: AVL trees or red-black trees
+        * They are guaranteed to be balanced;
+        * O(logN) guaranteed;
