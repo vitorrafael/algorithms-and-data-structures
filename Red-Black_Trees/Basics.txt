@@ -1,0 +1,20 @@
++ Properties:
+    - Each node is either red or black;
+    - The root node is always black;
+    - All leaves(NILL or NULL) are black;
+    - Every red node must have two black child nodes and no other children - It must have one black parent;
+    - Every path from a given node to any of its descendant NIL/NULL nodes contains the same number of black nodes;
+    - Every new node is red by default;
+    - Insertion works the same ways as AVL and BST;
+    - Every insertion we have to check wheter we have violated the red-black properties or not;
+    
++ Rotations:
+    - The same as AVL Trees;
+    - Time Complexity: O(1).
+    
++ The Logic Behind Red-Black Trees:
+    - The shortest path have black nodes exclusively;
+    - The longest possible path consists of 2*m(number of black nodes) alternating black and red;
+    
+    NO PATH IS MORE THAN TWICE AS LONG AS ANY OTHER PATH IN THE TREE
+        * So the tree is approximately balanced;

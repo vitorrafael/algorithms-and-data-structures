@@ -1,0 +1,12 @@
+* Red-Black Trees:
+    - Linux kernels relies heavily on this data structure;
+    - Insertion is fast because it's not rigidly balance;
+    - For an insert intensive task, use a Red-Black tree;
+    - C++ STL: map, multimap multiset;
+    - Java: java.util.TreeMap, java.util.TreeSet.
+    
+* AVL Trees:
+    - Rigidly balanced;
+    - Faster look-ups;
+    - For a look-up intensive taks use an AVL Tree;
+    - Insertion/deletion is not so fast due to the necessity to keep rebalancing the tree.

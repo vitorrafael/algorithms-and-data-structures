@@ -1,0 +1,24 @@
+* CASE I:
+    - Recolor some nodes;
+    - Given a node X;
+    - If the uncle of the node X is red too;
+    - Check recursively in the RBT if another properties have been violated;
+
+* CASE II:
+    - Given a node X;
+    - The uncle of node X is a black node and X is a right child (or the symmetric version);
+    - Make a left rotation on X's parent;
+    - X becomes the parent of its previous parent;
+    
+* CASE III:
+    - Uncle of node X is black and node X is a left child;
+    - Make a rotation on the node X's grandparent;
+    - After the rotations, we might have to do some recolorings as well;
+    - It is the same for the symmetric version, it just changes the rotation direction;
+    
+* CASE IV:
+    - Uncle of node X is red and node X is a left child;
+    - Recolor some nodes;
+    - The parent of node X and the uncle of node X will be black, and the grandparent of node X will be red;
+    - X becomes its grandparents;
+    - Check the violations recursively;
