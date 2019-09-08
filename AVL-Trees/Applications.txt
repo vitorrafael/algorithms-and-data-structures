@@ -1,0 +1,13 @@
+AVL Sort:
+    - We can use this data structure to sort items;
+    - Insert the N items wanted to be sort;
+    - In order traversal:
+        * Insertion: O(N*logN);
+        * In-Order Traversal: O(N)
+        * Overall Complexity: O(N*logN)
+            |-> Because you have to insert an item
+            
+Applications:
+    - Databases with a lot of look-ups and not so many deletions or insertions;
+    - Loop-up tables are usually implemented with the help of hashtables but AVL trees support more operations in the main;
+    - Red-Black Trees are a bit more popular because for AVL trees we have to make several rotations;
