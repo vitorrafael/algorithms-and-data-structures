@@ -1,0 +1,9 @@
+Priority Queue:
+    - Abstract data type;
+    - Every item has an priority value;
+    - An element with high priority is served before an element with lower priority;
+    - Usually implemented with heaps;
+    - Can be implemented with self balancing trees as well;
+    - Very similar to queues;
+        * Get the next item -> The highest priority element is retrieved first;
+        * No FIFO structure;

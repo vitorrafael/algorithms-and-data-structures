@@ -1,0 +1,15 @@
+HEAPS:
+    - Binary Tree with tree children;
+    - Two binary heap types:
+        * Min heap:
+            # The keys of parent nodes are less than or equal to those of the children;
+            # The lowest key is the root node
+        * Max heap:
+            # The keys of parent nodes are always greater than or equal to those of the children;
+            # The highest key is the root node
+    - Applications:
+        * Dijkstra's algorithm, Prims algorithm
+    - Efficient application of piority queues
+    
+    PROPERTIES:
+        1.) Completeness -> we construct the heap from left to right across each row;
