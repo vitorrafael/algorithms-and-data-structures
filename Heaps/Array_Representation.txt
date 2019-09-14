@@ -1,0 +1,16 @@
+Binary Heap: Maximum Heap
+    - The root node is always the mode with highest value;
+    - The important concepts is that the parent is always bigger than its children;
+    - Numbered in sequential order;
+    - Array representations:
+        * The indexes will be assigned to every node in the heap;
+    - Given a parent node i:
+        * Left Child = 2i + 1;
+        * Right Child = 2i + 2;
+    - Building a heap:
+        * Insert the data and check if the heap properties are met;
+        * If they are violated we have to reconstruct the heap -> Heapify proccess
+    - Time complexities:
+        * Construct a heap: O(N)
+            # We have to reconstruct the heap if its properties are violated;
+                O(N) + O(logN) = O(N)

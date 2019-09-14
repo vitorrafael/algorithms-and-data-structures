@@ -1,0 +1,16 @@
+HEAPSORT
+    - Comparison-based sorting algorithm;
+    - Use heap data structure to find the maximum;
+    - Bit slower in practice on most machines than a well-implemented quicksort;
+    - More favorable worst-case: O(NlogN)
+    - In-place algorithm, but not a stable sort;
+    - Does not need aditional memory;
+    - Problems: We have to construct a heap first -> O(N)
+    
+    * Keep swapping the root node with the last element and also mantain the heap properties;
+    * After swapping with the root:
+        - Consider the last item to be sorted: no longer part of the tree;
+        - Check if it is a valid heap;
+        - Running time:
+            Consider N items + have to make some swappings if necessary
+                            O(N*logN)

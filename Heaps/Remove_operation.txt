@@ -1,0 +1,5 @@
+- Delete an item: Get rid of the item, creating a "hole" in the tree.
+    * Put the last item there, making sure that the heap properties are valid;
+    * Time complexity:
+       # Deleting the root node O(1) + reconstruction O(logN) = O(logN)
+       # Deleting an arbitrary node O(N) + reconstruction O(logN) = O(N)

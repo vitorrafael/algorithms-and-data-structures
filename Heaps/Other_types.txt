@@ -1,0 +1,23 @@
+BINOMIAL HEAP:
+    - Similar to a binary heap but also supports quick merging of two heaps;
+    - It is an important implementation of the mergeable heap ABT ( meldable heap)
+    - Priority queue basically + supporting merge operation;
+    - Implememnted as a collection of trees;
+    - Insertion O(logN) can be reduced to O(1) time complexity with this heap;
+    
+FIBONACCI HEAP:
+    - Faster than classic binary heap;
+    - Dijkstra's algorithm and Prim's spanning tree algorithm run faster if they rely on this heap instead of binary;
+    - Hard to implement efficiently;
+    - Multiple childrens;
+    - Achive O(1) insert instead of O(logN);
+    - Every node has degree at most O(logN) and the size of a subtree rooted in a node of degree K is at least Fk+2 where Fk is the K-th Fibonacci number;
+    
+    
+Operation    |  Binary | Binomial | Fibonacci
+=============|=========|==========|===========
+Find min     |  O(1)   |  O(logN) | O(logN)
+Delete min   | O(logN) |  O(logN) | O(logN) 
+Insert       | O(logN) |    O(1)  |  O(1)
+Decrease key | O(logN) |  O(logN) |  O(1) 
+Merge        |    -    |  O(logN) |  O(1)

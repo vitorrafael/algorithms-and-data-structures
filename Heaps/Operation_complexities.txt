@@ -1,0 +1,15 @@
+Running time:
+    - Memory Complexity:
+        We have N items to be stored -> O(N) memory complexity;
+    - Find  the minimum/maximum:
+        The highest priority item is the root node -> O(1);
+    - Insert new item:
+        Insert -> O(1)
+        Check heap properties -> O(logN)
+        Total: O(1) + O(logN) = O(logN)
+    - Remove item:
+        Remove -> O(1)
+        Heap properties -> O(logN)
+        Total: O(1) + O(logN) = O(logN)
+        
+* O(log2 N) -> Because a node has at most log2N parents so at most log2N swaps are needed;
